@@ -1,0 +1,9 @@
+/* Header background - sky blue */
+.header {
+	background-color: #5599FF;
+}
+
+/* Move search to the right */
+.header > .search-input {
+	margin-left: auto;
+}
