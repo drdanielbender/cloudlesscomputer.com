@@ -3,7 +3,8 @@
 	background-color: #5599FF;
 }
 
-/* Move search to the right */
-.header > .search-input {
-	margin-left: auto;
+/* Remove vertical bar between logo and search */
+.header *::before,
+.header *::after {
+	display: none !important;
 }
