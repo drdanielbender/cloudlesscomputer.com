@@ -1,0 +1,53 @@
+---
+---
+
+<theme-toggle>
+  <button type="button" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+</theme-toggle>
+
+<script>
+  type Theme = 'dark' | 'light';
+  const ICON: Record<Theme, string> = { dark: '🌙', light: '☀️' };
+
+  class ThemeToggle extends HTMLElement {
+    button: HTMLButtonElement | null = null;
+
+    connectedCallback() {
+      this.button = this.querySelector('.theme-toggle');
+      this.init();
+    }
+
+    getTheme(): Theme {
+      const stored = localStorage.getItem('starlight-theme');
+      if (stored === 'dark' || stored === 'light') return stored;
+      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+
+    setTheme(theme: Theme) {
+      document.documentElement.dataset.theme = theme;
+      localStorage.setItem('starlight-theme', theme);
+      this.button!.textContent = ICON[theme];
+    }
+
+    init() {
+      this.setTheme(this.getTheme());
+      this.button?.addEventListener('click', () => {
+        const next = this.getTheme() === 'dark' ? 'light' : 'dark';
+        this.setTheme(next);
+      });
+    }
+  }
+
+  customElements.define('theme-toggle', ThemeToggle);
+</script>
+
+<style>
+  .theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.25rem;
+    padding: 0.25rem;
+    line-height: 1;
+  }
+</style>
