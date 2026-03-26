@@ -34,3 +34,8 @@ Main config in `astro.config.mjs`. Starlight handles:
 - When unsure how to apply a change, look up the [Starlight documentation](https://starlight.astro.build/)
 - Always run `pnpm dev` to verify changes work
 - Custom CSS: `src/styles/custom.css`
+
+## Commit Conventions
+
+- Do NOT include "Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>" in commit messages
+- Do NOT use heredoc EOF indicators in commit messages
