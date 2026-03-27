@@ -15,10 +15,8 @@ const shouldRenderSearch =
 	<div class="title-wrapper sl-flex">
 		<SiteTitle />
 	</div>
-	<div class="sl-flex print:hidden">
-		{shouldRenderSearch && <Search />}
-	</div>
 	<div class="sl-hidden md:sl-flex print:hidden right-group">
+		{shouldRenderSearch && <Search />}
 		<a href="/about" class="about-link">About</a>
 		<div class="sl-flex social-icons">
 			<SocialIcons />
@@ -102,5 +100,30 @@ const shouldRenderSearch =
 	}
 	.about-link:hover {
 		background: #5c82f7;
+	}
+
+	:global([data-open-modal]) {
+		display: flex !important;
+		align-items: center;
+		justify-content: center;
+		height: auto !important;
+		width: auto !important;
+		max-width: none !important;
+		padding: 0.25rem 0.75rem !important;
+		border-radius: 0.25rem !important;
+		border: none !important;
+		font-size: 0.875rem !important;
+		font-weight: 500 !important;
+		color: #fff !important;
+		background: #396cf0 !important;
+		transition: background 0.2s ease;
+		cursor: pointer;
+		gap: 0.5rem;
+	}
+	:global([data-open-modal]):hover {
+		background: #5c82f7 !important;
+	}
+	:global([data-open-modal] kbd) {
+		display: none !important;
 	}
 </style>
