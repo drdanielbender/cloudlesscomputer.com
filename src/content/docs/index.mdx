@@ -1,40 +1,45 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
-template: splash # Remove or comment out this line to display the site sidebar on this page.
+title: A privacy-friendly way to use your computer
+description: Learn to remove the dependency on the big tech companies.
+template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: Every time you use cloud services, your data flows through servers owned by tech giants. Your documents, photos, messages, and queries are all processed by their infrastructure. They see everything. But there is an alternative, run your software and AI locally on devices you own, go cloudless.
   image:
     file: ../../assets/houston.webp
-  actions:
-    - text: Example Guide
-      link: /guides/example/
-      icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
-      variant: minimal
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+# Hi, I'm Daniel Bender.
 
-## Next steps
+I am exploring how we can get the trust back in using our digital devices and own our data and thoughts.
 
-<CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
-	</Card>
-	<Card title="Change page layout" icon="document">
-		Delete `template: splash` in `src/content/docs/index.mdx` to display a
-		sidebar on this page.
-	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
+Besides the privacy-friendly aspects of using software and AI, I enjoy engaging with new technological possibilities, exploring them, and putting them together like Lego bricks to create something new.
+
+I love sharing my enthusiasm for this with others, teaching them, sharing my thoughts, and inspiring them.
+
+##### 📧 Sign-up to my newsletter Cloudless AI to learn how to use an AI you can trust and share your secrets with.
+
+<div style="height: 1rem;"></div>
+
+# Digital Garden
+
+I am sharing many imperfect notes and ideas growing slowly over time. Some entry points are listed below, but once in the garden there is way more to explore by following links, tags or using the search.
+
+import { Card, CardGrid } from "@astrojs/starlight/components";
+
+<CardGrid>
+  <Card title="Latest content updates" icon="pencil">
+    The AI news sources I follow <br />
+    Use Claude Code in a sandbox to protect yourself <br />
+    What is OpenShell
+  </Card>
+  <Card title="Change page layout" icon="document">
+    Delete `template: splash` in `src/content/docs/index.mdx` to display a
+    sidebar on this page.
+  </Card>
+  <Card title="Add new content" icon="add-document">
+    Add Markdown or MDX files to `src/content/docs` to create new pages.
+  </Card>
+  <Card title="Configure your site" icon="setting">
+    Edit your `sidebar` and other config in `astro.config.mjs`.
+  </Card>
 </CardGrid>
