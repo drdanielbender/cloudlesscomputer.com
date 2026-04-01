@@ -7,6 +7,7 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: '',
+			favicon: '/favicon.svg',
 			logo: {
 				light: './src/assets/cloudless-computer-sun-logo-light.svg',
 				dark: './src/assets/cloudless-computer-sun-logo-dark.svg',
