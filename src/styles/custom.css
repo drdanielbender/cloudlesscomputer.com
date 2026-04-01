@@ -13,3 +13,8 @@
 :root {
 	scrollbar-gutter: stable;
 }
+
+/* Liberation Sans for all text */
+html, body {
+	font-family: 'Liberation Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
