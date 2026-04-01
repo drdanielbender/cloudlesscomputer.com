@@ -8,7 +8,8 @@ export default defineConfig({
 		starlight({
 			title: '',
 			logo: {
-				src: './src/assets/logo-cloudlesscomputer.svg',
+				light: './src/assets/cloudless-computer-sun-logo-light.svg',
+				dark: './src/assets/cloudless-computer-sun-logo-dark.svg',
 			},
 			customCss: ['./src/styles/custom.css'],
 			social: [],
