@@ -1,6 +1,6 @@
-/* Header background - sky blue */
+/* Header background - adapts to theme */
 .header {
-	background-color: #5599FF;
+	background-color: var(--sl-color-bg);
 }
 
 /* Remove vertical bar between logo and search */
