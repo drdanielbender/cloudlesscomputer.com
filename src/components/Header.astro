@@ -94,12 +94,12 @@ const shouldRenderSearch =
 		text-decoration: none;
 		font-size: 0.875rem;
 		font-weight: 500;
-		color: #fff;
-		background: #396cf0;
+		color: var(--sl-color-text);
+		background: transparent;
 		transition: background 0.2s ease;
 	}
 	.about-link:hover {
-		background: #5c82f7;
+		background: var(--sl-color-gray-6);
 	}
 
 	:global([data-open-modal]) {
@@ -114,20 +114,21 @@ const shouldRenderSearch =
 		border: none !important;
 		font-size: 0.875rem !important;
 		font-weight: 500 !important;
-		color: #fff !important;
-		background: #396cf0 !important;
+		color: var(--sl-color-text) !important;
+		background: transparent !important;
 		transition: background 0.2s ease;
 		cursor: pointer;
 		gap: 0.5rem;
 	}
 	:global([data-open-modal]):hover {
-		background: #5c82f7 !important;
+		background: var(--sl-color-gray-6) !important;
 	}
 	:global([data-open-modal] kbd) {
 		display: none !important;
 	}
 
 	:global(.site-title img) {
-		height: calc(var(--sl-nav-height) - 2rem);
+		height: calc(var(--sl-nav-height) - 0.5rem);
+		margin-top: 2.5rem;
 	}
 </style>
