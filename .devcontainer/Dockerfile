@@ -79,13 +79,17 @@ RUN sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/
   -a "export PROMPT_COMMAND='history -a' && export HISTFILE=/commandhistory/.bash_history" \
   -x
 
+# Install OpenCode
+RUN curl -fsSL https://opencode.ai/install | bash
+
 # Install Claude
 RUN curl -fsSL https://claude.ai/install.sh | bash
+
+# Add locally installed apps to path
 ENV PATH="/home/node/.local/bin:${PATH}"
 
 # Install pnpm
 RUN npm install -g pnpm
-
 
 # Copy and set up firewall script
 COPY init-firewall.sh /usr/local/bin/
