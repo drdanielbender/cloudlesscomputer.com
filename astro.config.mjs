@@ -23,6 +23,10 @@ export default defineConfig({
 					],
 				},
 				{
+					label: 'Digital Garden',
+					autogenerate: { directory: 'dg' },
+				},
+				{
 					label: 'Reference',
 					autogenerate: { directory: 'reference' },
 				},
