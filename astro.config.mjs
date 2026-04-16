@@ -16,19 +16,8 @@ export default defineConfig({
 			social: [],
 			sidebar: [
 				{
-					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
-					],
-				},
-				{
 					label: 'Digital Garden',
 					autogenerate: { directory: 'dg' },
-				},
-				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
 				},
 			],
 			components: {
