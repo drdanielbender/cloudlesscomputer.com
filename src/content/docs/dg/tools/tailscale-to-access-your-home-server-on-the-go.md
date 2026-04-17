@@ -1,11 +1,11 @@
 ---
-title: Tailscale for private networking
-description: A zero-configuration VPN that creates secure mesh networks between your devices
+title: Tailscale to access your home server on the go
+description: A zero-configuration VPN that creates secure mesh networks between your devices and allows you to access services running on your home server from everywhere
 ---
 
 Tailscale is a zero-configuration VPN (Virtual Private Network) that creates a secure and private mesh network between your devices. Unlike traditional VPNs that route all traffic through a central server, Tailscale connects devices directly to each other using WireGuard encryption, making it fast, simple, and ideal for accessing self-hosted services from anywhere.
 
-## The problem: accessing services across networks
+## The problem: Remote home server access
 
 When you self-host services on a home server, you quickly run into connectivity challenges:
 
@@ -16,7 +16,7 @@ When you self-host services on a home server, you quickly run into connectivity 
 
 Simply put, accessing your self-hosted services from a device while away from home is surprisingly difficult.
 
-## What Tailscale provides
+## The solution: Tailscale
 
 Tailscale solves these problems by creating an overlay network:
 
@@ -30,12 +30,20 @@ Everything in Tailscale is Open Source, except the GUI clients for proprietary o
 
 - **Truly zero-config**: Install, log in, and devices appear—no firewall rules, no port forwarding
 - **Cross-platform**: Native apps for macOS, Windows, Linux, iOS, Android, and even some routers
-- **Generous free tier**: Personal tier covers nearly all features for free
+- **Fully functional free tier**: Personal tier covers nearly all features for free
 - **Exit nodes**: Optionally route all internet traffic through a specific device for location privacy
+
+## When you might not need Tailscale
+
+For some setups, Tailscale adds unnecessary complexity:
+
+- **Only local access**: If you only access services from your home server from the machines in the same network
+- **Traditional VPN in place**: If you already run your own WireGuard or OpenVPN server
+- **Cloud-hosted services**: If your services are already on the public internet with proper authentication
 
 ## Privacy considerations
 
-Tailscale is a commercial service, which raises valid privacy questions:
+Tailscale is a commercial service, which raises privacy questions:
 
 - **Account required**: You need a Tailscale account to coordinate the network
 - **Coordination servers**: Tailscale's servers facilitate initial connection setup (but do not relay traffic when direct connections are possible)
@@ -44,32 +52,21 @@ Tailscale is a commercial service, which raises valid privacy questions:
 
 You're exchanging visibility to Tailscale (network topology, device identities) for the convenience of easy, secure connectivity. Your actual data remains encrypted end-to-end.
 
-## When you might not need Tailscale
-
-For some setups, Tailscale adds unnecessary complexity:
-
-- **Single-device access**: If you only access Forgejo from the machine it's running on
-- **Already on the same network**: If all your devices stay on one trusted local network
-- **Traditional VPN in place**: If you already run your own WireGuard or OpenVPN server
-- **Cloud-hosted services**: If your services are already on the public internet with proper authentication
-
 ## Getting started
 
 The quickest way to set up Tailscale:
 
 1. **Create an account**: Sign up at [tailscale.com](https://tailscale.com)
-   ```
 
-   ```
-2. **Install on your devices**: Download the app for your platform and sign in with the same account
+2. **Install on your devices**: Download the app for your platform and sign in with your account
 
-3. **Access self-hosted services**: Use your server's Tailscale IP adress (shown in the admin console) or MagicDNS name to access services running on your home server.
+3. **Access self-hosted services**: Use your server's Tailscale IP adress (shown in the admin console of the Tailscale website when logged in) or MagicDNS name to access services running on your home server.
 
-That's it. Your devices now share a private network that works from anywhere.
+That's it. With Tailscale running on all your devices, they now share a private network connection that works from anywhere. You will be able to use services provided by your home server from any of your device independend how they connect to the internet in a safe and secure way.
 
 ## Next steps
 
-Once Tailscale is running, you can:
+Once Tailscale is running, you might want to:
 
 - Enable MagicDNS for friendlier hostnames
 - Configure an exit node for secure browsing on untrusted networks

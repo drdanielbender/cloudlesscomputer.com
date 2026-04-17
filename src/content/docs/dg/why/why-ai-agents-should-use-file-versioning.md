@@ -33,10 +33,10 @@ But my preferred way of using Git is in the terminal as it gives you full contro
 
 ## Where to store your projects
 
-Your file versioning can be initiated and only happen in the project folder itself. However, a big additional benefit is added by syncing your changes to a central place and from there to other devices. This provides on the hand a backup like copy of your files and gives you the flexibility to work on a project from multiple devices like your computer, tablet and phone.
+Your file versioning can be initiated and only happen in the project folder itself. However, a big additional benefit is added by syncing your changes to a central place and from there to other devices. This provides on the hand a backup copy of your files and gives you the flexibility to work on a project from multiple devices like your computer, tablet and phone.
 
-The most common choice for this is the cloud-based service named GitHub, but there are more privacely-friendly alternatives ([read more](../../alternative-to/forgejo)).
+The most common choice for this is the cloud-based service named GitHub, but there are more privacely-friendly alternatives ([read more](../../alternative-to/github-to-forgejo-for-file-versioning)).
 
 ## The bottom line
 
-AI agents are powerful collaborators, but power without accountability is risky. Version control gives you that piece of mind as all changes to your files are becoming transparent, reviewable, and reversible.
+AI agents are powerful collaborators, but power without accountability is risky. Version control gives you piece of mind as all changes to your files are becoming transparent, reviewable, and reversible.

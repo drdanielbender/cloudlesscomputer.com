@@ -1,6 +1,7 @@
 ---
 title: Why using Claude Code in a sandbox protects you
 description: How running Claude Code in an isolated environment keeps your system safe
+draft: true
 ---
 
 Claude Code is a powerful AI coding assistant that can read files, write code, run commands, and make changes across your entire project. It is designed to be helpful and safe, but it still operates with the permissions of your user account. When you run it on your main machine, it has access to everything: your documents, SSH keys, environment variables, browser data, and system files. A sandbox changes this equation.

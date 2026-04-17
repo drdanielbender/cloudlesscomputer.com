@@ -1,6 +1,7 @@
 ---
 title: OpenShell as agent sandbox
 description: A secure sandbox environment for running AI agents safely
+draft: true
 ---
 
 OpenShell is a sandbox environment designed specifically for running AI agents safely. When you ask an AI to write code, modify files, or execute commands on your system, you're essentially giving a foreign entity access to your computer. OpenShell creates an isolated space where AI agents can work without risking your main system.

@@ -1,6 +1,7 @@
 ---
 title: Why you should check the privacy policy of cloud services
 description: How cloud services use your data for AI training by default—and what you can do about it.
+draft: true
 ---
 
 Why should you care about the privacy policy of every cloud service you use? Because **your private data is likely being used to train AI models right now**—and you probably never gave explicit permission for it.
