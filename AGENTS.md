@@ -22,6 +22,18 @@ pnpm astro check  # Run TypeScript type checking
 - File path determines URL (e.g., `src/content/docs/guides/getting-started.md` → `/guides/getting-started`)
 - Sidebar configuration: `astro.config.mjs`
 
+### Digital Garden Structure
+
+Articles in the digital garden follow a specific format and are organized in folders under `src/content/docs/dg/`:
+
+| Format | Folder | Description |
+|--------|--------|-------------|
+| `alternative-to` | `dg/alternative-to/` | Privacy-friendly alternatives to popular services (e.g., Forgejo as alternative to GitHub) |
+| `tools` | `dg/tools/` | Tool recommendations and guides (e.g., OpenShell as agent sandbox) |
+| `why` | `dg/why/` | Explanatory articles on privacy topics (e.g., Why AI agents need version control) |
+
+**When creating new articles:** Store them in the appropriate folder based on their format type.
+
 ## Configuration
 
 Main config in `astro.config.mjs`. Starlight handles:
