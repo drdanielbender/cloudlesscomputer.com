@@ -1,7 +1,9 @@
 ---
-title: Why AI agents need version control
+title: Why AI agents should use file versioning
 description: Why version control is essential when collaborating with AI agents
 ---
+
+GitHub is a version control system built for code, but it works just as well for text. It's the most prominent choice developers use for their private projects—free repositories, easy collaboration, and everyone's already there. But in the age of AI agents, version control serves another purpose: tracking changes when AI helps you write, edit, and refactor your work. A version control system lets you undo unwanted changes, see exactly what was modified, and understand whether you or on of your AI agents made a particular edit. You can create a private repository on GitHub and feel secure, but here's the catch: GitHub is owned by Microsoft, one of the big tech companies. Even private repositories carry risks you might not have considered.
 
 Working with AI agents feels like having a skilled collaborator who never sleeps. They help write code, draft documents, create configurations, and refine content. But collaboration creates change, and change creates risk. When an AI agent modifies ten files in a single session, how do you know what actually changed? What if the changes break something? What if you preferred the previous version?
 
