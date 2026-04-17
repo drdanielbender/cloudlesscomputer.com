@@ -16,7 +16,8 @@
         "anthropic.claude-code",
         "dbaeumer.vscode-eslint",
         "esbenp.prettier-vscode",
-        "eamodio.gitlens"
+        "eamodio.gitlens",
+        "davidlday.languagetool-linter"
       ],
       "settings": {
         "editor.formatOnSave": true,
