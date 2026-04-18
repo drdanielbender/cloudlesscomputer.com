@@ -26,7 +26,7 @@ Tailscale solves these problems by creating an overlay network:
 - **End-to-end encryption**: All traffic is encrypted with WireGuard—no data passes through Tailscale servers unencrypted
 - **MagicDNS**: Access devices by name instead of remembering IP addresses
 
-Everything in Tailscale is Open Source, except the GUI clients for proprietary operating systems and the control server. Tailscale is offered as an commercial service, but it is also a great and free option for personal usage:
+Everything in Tailscale is open-source, except the GUI clients for proprietary operating systems and the control server. Tailscale is offered as a commercial service, but it is also a great and free option for personal usage:
 
 - **Truly zero-config**: Install, log in, and devices appear—no firewall rules, no port forwarding
 - **Cross-platform**: Native apps for macOS, Windows, Linux, iOS, Android, and even some routers
@@ -60,9 +60,9 @@ The quickest way to set up Tailscale:
 
 2. **Install on your devices**: Download the app for your platform and sign in with your account
 
-3. **Access self-hosted services**: Use your server's Tailscale IP adress (shown in the admin console of the Tailscale website when logged in) or MagicDNS name to access services running on your home server.
+3. **Access self-hosted services**: Use your server's Tailscale IP address (shown in the admin console of the Tailscale website when logged in) or MagicDNS name to access services running on your home server.
 
-That's it. With Tailscale running on all your devices, they now share a private network connection that works from anywhere. You will be able to use services provided by your home server from any of your device independend how they connect to the internet in a safe and secure way.
+That's it. With Tailscale running on all your devices, they now share a private network connection that works from anywhere. You will be able to use services provided by your home server from any of your devices independend how they connect to the internet in a safe and secure way.
 
 ## Next steps
 

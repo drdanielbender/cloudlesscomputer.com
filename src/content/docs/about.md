@@ -10,7 +10,7 @@ hero:
 
 Every time you use cloud services, your data flows through servers owned by tech giants. Your documents, photos, messages, and queries are all processed by their infrastructure. They see everything. You're not the customer – you're the product.
 
-The **cloudless computer** approach is an alternative way that teachess you to run software and AI on your own devices. No personal data is send to cloud servers. No algorithms learn from your behavior. No one profits from your thoughts.
+The **cloudless computer** approach is an alternative way that teaches you to run software and AI on your own devices. No personal data is sent to cloud servers. No algorithms learn from your behavior. No one profits from your thoughts.
 
 Your digital life should belong to you.
 
@@ -22,15 +22,15 @@ Your digital life should belong to you.
 
 Hi, I'm Daniel – creator of Cloudless Computer.
 
-A few years ago, I realized how dependent I had become on cloud services for everything: documents, photos, AI assistants, note-taking, even my calendar. Each service promised convenience, but the hidden cost was my data – flowing through servers I didn't control, being processed by algorithms I couldn't see.
+A few years ago, I realized how dependent I had become on cloud services for everything: documents, photos, AI assistants, note-taking, even my calendar. Each service promised convenience, but the hidden cost was my data flowing through servers I didn't control, being processed by algorithms I couldn't see.
 
-I started exploring alternatives. Small steps at first: a local note-taking app named Logseq (which in the meantime was replaced by Obsidian), a self-hosted file-syncthing service named Syncthing.
+I started exploring alternatives. Small steps at first: a local note-taking app named Logseq (which meanwhile was replaced by Obsidian), a self-hosted file-syncthing service named Syncthing.
 
-Then I discovered local AI models. It all started with the Llama model family from Meta and even at that early time with local model capabilties far behind the state of the art models from OpenAI and Anthropic, I realised that this is the future. Why? AI is better the more context it has, that means the more information you give it access to the better will the AI reponses help you to answer your questions and show you connections you did not see before.
+Then I discovered local AI models. It all started with the Llama model family from Meta and even at that early time with local model capabilties far behind the state-of-the art models from OpenAI and Anthropic, I realized that this is the future. Why? AI is better the more context it has, that means the more information you give it access to, the more likely the AI reponses help you to answer your questions and show you connections you did not see before.
 
-The more I experimented, the more I realized how much was possible. Today, I run nearly my entire digital life offline – AI assistants, document processing, image generation, all on devices I own. My data never leaves my house.
+The more I experimented, the more I realized how much was possible. Today, I run nearly my entire digital life offline – AI assistants, document processing, image generation, all on devices I own. Most of my data never leaves my house.
 
-I am here to help you do the same. Get back the ownership of your digital life step by step.
+I am here to help you do the same. Get back the ownership of your digital life, step by step.
 
 ---
 
@@ -45,7 +45,7 @@ I believe:
 - **AI should serve you** – Large language models and AI tools should work for your benefit, not as data collection mechanisms for corporations.
 - **Small steps compound** – Building a cloudless workflow isn't about perfection; it's about progress and reclaiming more of your digital life over time.
 
-With this approach, Cloudless Computer has become a resource for privacy-conscious individuals who want to break free from Big Tech dependency.
+With this approach, cloudless computer has become a resource for privacy-conscious individuals who want to break free from big tech dependency.
 
 ---
 
@@ -58,7 +58,7 @@ I believe the only reliable path to digital sovereignty is through observation, 
 - **Build** a workflow that respects your privacy without sacrificing productivity.
 - **Unlock** the power of AI that works entirely on your device.
 
-We provide more than education – you get practical guides, tested configurations, and shared insights to help you achieve lasting digital independence.
+I provide more than education. You get practical guides, tested configurations, and shared insights to help you achieve lasting digital independence.
 
 ---
 
@@ -88,6 +88,6 @@ Have a question, collaboration idea, or just want to share something from your c
 
 I will do my best to reply to every message you send to me as a reply to my newsletter or as an 𝕏 or LinkedIn DM.
 
-- [Learn how to go cloudless from my newsletter](https://news.aidful.net)
+- [Learn how to go cloudless from my newsletter named Aidful News](https://news.aidful.net) (soon to be rebooted and renamed to **cloudless computer**)
 - [Connect with me on 𝕏](https://x.com/drdanielbender)
 - [Connect with me on LinkedIn](https://www.linkedin.com/in/drdanielbender/)

@@ -21,7 +21,7 @@ The stakes are high: your personal projects, business ideas, AI prompts, or sens
 
 There are valid situations where GitHub's cloud hosting makes sense:
 
-- **Open source projects**: Projects you want to make accessible for others
+- **Open-source projects**: Projects you want to make accessible for others
 - **Non-sensitive prototypes**: Early experiments with no confidential data
 
 ## Self-hosted alternatives
@@ -29,7 +29,7 @@ There are valid situations where GitHub's cloud hosting makes sense:
 Several Git hosting platforms exist that you can run on your own infrastructure:
 
 - **GitLab**: Feature-rich but resource-intensive that is best suited for companies
-- **Gitea**: Lightweight version control, which shifted in 2022 to for-profit project controlled by a company
+- **Gitea**: Lightweight version control, which shifted in 2022 to a for-profit project controlled by a company
 - **Forgejo**: Community-driven fork of Gitea to ensure the project stays independent
 
 ## My pick for personal projects: Forgejo
@@ -44,11 +44,11 @@ I recommend Forgejo for most private users making the switch from GitHub:
 
 ## Getting started
 
-To get started and explore the capabilities you can install Forgejo locally on the system you are working on. But if you target a more flexible installation which also provides a copy of all your files in your version control system, you can jump to the [Always-on Installation](#always-on-installation) section.
+To get started and explore the capabilities, you can install Forgejo locally on the system you are working on. But if you target a more flexible installation that also provides a copy of all your files in your version control system, you can jump to the [Always-on Installation](#always-on-installation) section.
 
 ### macOS
 
-On a Mac this is quite easy after you installed the package manager [brew](https://brew.sh/). To install and run Forgejo you only need to run the following two commands in your terminal:
+On a Mac this is straightforward after you install the package manager [brew](https://brew.sh/). To install and run Forgejo you only need to run the following two commands in your terminal:
 
 ```
 brew install forgejo
@@ -57,9 +57,9 @@ forgejo web
 
 Open your browser at [http://localhost:3000](http://localhost:3000) and you will see a quite daunting configuration screen. However, most values are fine with their default entries.
 
-The used database is likely the mosts important choice and it is difficult to give a general recommendation. But if you use Forgejo for your personal project which you keep private and only work with a few collaborators (human and / or AI), my recommendation is to change the database entry to the value **SQLite3** which is a simple database stored as a single file on your disk.
+The used database is likely the most important choice, and it is difficult to give a general recommendation. But if you use Forgejo for your personal project which you keep private and only work with a few collaborators (human and / or AI), my recommendation is to change the database entry to the value **SQLite3** which is a simple database stored as a single file on your disk.
 
-Furthermore you have to scroll down and click the Administrator account settings to configure your username and password.
+Furthermore, you have to scroll down and click the Administrator account settings to configure your username and password.
 
 That it. You can log in and create your first project or import one from GitHub.
 
@@ -71,19 +71,19 @@ Running Forgejo for the first time and doing the initial configuration is the sa
 
 ## Always-on installation
 
-The binary installation on your work device described above can be used permanently but brings at least two downsides. The machine running Forgejo locally must be turned on if you want to access the version control system from another device like your phone, second computer or your dedicated AI agent computer. Furthermore if your version control is running on the same system as you work with your files you put in the version control, you don't have the benefit of an additional backup copy of your files unless you check them out on another device.
+The binary installation on your work device described above can be used permanently but brings at least two downsides. The machine running Forgejo locally must be turned on if you want to access the version control system from another device like your phone, second computer, or your dedicated AI agent computer. Furthermore, if your version control is running on the same system as you work with the files you put in the version control, you don't have the benefit of an additional backup copy of your files unless you check them out on another device.
 
-Running the Forgejo on a dedicated system, like a small thin client, Mac Mini or even a Raspberry Pi, eliminates these drawbacks.
+Running the Forgejo on a dedicated system, like a small thin client, a Mac Mini or even a Raspberry Pi, eliminates these drawbacks.
 
-On such a dedicated system you can install Forgejo also via the binary as described in the Getting Started section. However I would recommend to run it besides other services in a dedicated Docker container to make your setup a bit safer by isolating Forgejo from other services running on your device.
+On such a dedicated system you can install Forgejo also via the binary as described in the Getting Started section. However, I would recommend running it besides other services in a dedicated Docker container to make your setup a bit safer by isolating Forgejo from other services running on your device.
 
 ## Use multiple devices
 
 One of the main benefits of using a version control system is that you can access the current project status from different devices and keep your work in sync across them.
 
-To access you local Forgejo installation your devices must be in the same network and you need to know the IP address of the device you installed Forgejo on as [http://localhost:3000](http://localhost:3000) is the loopback address which targets always the device you are using right now.
+To access your local Forgejo installation, your devices must be in the same network, and you need to know the IP address of the device you installed Forgejo on, as [http://localhost:3000](http://localhost:3000) is the loopback address that always targets the device you are using right now.
 
-However, instead of identifying your local IP address and using that one in combination with the port 3000, my recommendation is to set up [Tailscale](../../tools/tailscale-to-access-your-home-server-on-the-go/). The latter creates a virtual private network which even lets you access Forgejo and other services if your devices are connected differently to the internet.
+However, instead of identifying your local IP address and using that one in combination with the port 3000, my recommendation is to set up [Tailscale](../../tools/tailscale-to-access-your-home-server-on-the-go/). The latter creates a virtual private network, which even lets you access Forgejo and other services if your devices are connected differently to the internet.
 
 ## Next steps
 
