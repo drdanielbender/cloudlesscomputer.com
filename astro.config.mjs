@@ -16,6 +16,14 @@ export default defineConfig({
 			social: [],
 			sidebar: [
 				{
+					label: 'Home',
+					link: '/',
+				},
+				{
+					label: 'About',
+					link: '/about',
+				},
+				{
 					label: 'Digital Garden',
 					autogenerate: { directory: 'dg' },
 				},
