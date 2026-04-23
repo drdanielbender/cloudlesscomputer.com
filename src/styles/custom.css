@@ -14,6 +14,15 @@
 	scrollbar-gutter: stable;
 }
 
+/* Hide heading anchor links by default and show on hover/focus — on all devices */
+.sl-markdown-content .sl-anchor-link {
+	opacity: 0;
+}
+.sl-markdown-content .sl-anchor-link:focus,
+.sl-markdown-content .sl-heading-wrapper:hover .sl-anchor-link {
+	opacity: 1;
+}
+
 /* Liberation Sans for all text */
 html, body {
 	font-family: 'Liberation Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
