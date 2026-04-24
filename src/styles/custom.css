@@ -24,6 +24,38 @@
 }
 
 /* Liberation Sans for all text */
+@font-face {
+	font-family: 'Liberation Sans';
+	src: url('/fonts/LiberationSans.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Liberation Sans';
+	src: url('/fonts/LiberationSans-Italic.woff2') format('woff2');
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Liberation Sans';
+	src: url('/fonts/LiberationSans-Bold.woff2') format('woff2');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Liberation Sans';
+	src: url('/fonts/LiberationSans-BoldItalic.woff2') format('woff2');
+	font-weight: 700;
+	font-style: italic;
+	font-display: swap;
+}
+
 html, body {
 	font-family: 'Liberation Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
