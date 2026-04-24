@@ -8,10 +8,6 @@ export default defineConfig({
 		starlight({
 			title: '',
 			favicon: '/favicon.svg',
-			logo: {
-				light: './src/assets/cloudless-computer-sun-logo-light.svg',
-				dark: './src/assets/cloudless-computer-sun-logo-dark.svg',
-			},
 			customCss: ['./src/styles/custom.css'],
 			social: [],
 			sidebar: [
@@ -32,6 +28,7 @@ export default defineConfig({
 				ThemeSelect: './src/components/ThemeSelect.astro',
 				Header: './src/components/Header.astro',
 				PageFrame: './src/components/PageFrame.astro',
+				SiteTitle: './src/components/SiteTitle.astro',
 			},
 		}),
 	],
