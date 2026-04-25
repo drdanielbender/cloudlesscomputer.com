@@ -1,0 +1,202 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+	<div class="footer-inner">
+		<div class="footer-branding">
+			<p class="footer-title">Want to stay up to date?</p>
+			<div class="footer-actions">
+				<a class="newsletter-link" href="https://news.aidful.net">
+					<svg aria-hidden="true" viewBox="0 0 24 24">
+						<path d="M4 5h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm0 2v.34l8 5.34 8-5.34V7H4Zm0 2.75V17h16V9.75l-7.45 4.97a1 1 0 0 1-1.1 0L4 9.75Z" />
+					</svg>
+					Subscribe to my newsletter
+				</a>
+				<nav class="social-links" aria-label="Social media">
+					<a href="https://x.com/drdanielbender" aria-label="Follow on X">
+						<svg aria-hidden="true" viewBox="0 0 24 24">
+							<path d="M14.17 10.16 22.02 1h-1.86l-6.82 7.95L7.9 1H1.62l8.23 12.02L1.62 22.61h1.86l7.2-8.4 5.75 8.4h6.28l-8.54-12.45Zm-2.55 2.98-.84-1.19L4.15 2.4h2.86l5.35 7.7.83 1.19 6.96 10.02h-2.86l-5.67-8.17Z" />
+						</svg>
+					</a>
+					<a href="https://www.linkedin.com/in/drdanielbender/" aria-label="Connect on LinkedIn">
+						<svg aria-hidden="true" viewBox="0 0 24 24">
+							<path d="M20.45 20.45h-3.56v-5.58c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.68H9.34V8.98h3.42v1.57h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.29ZM5.32 7.41a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14Zm1.78 13.04H3.54V8.98H7.1v11.47ZM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.21 0 22.23 0Z" />
+						</svg>
+					</a>
+				</nav>
+			</div>
+			<p class="footer-meta">&copy; {currentYear} Dr. Daniel Bender</p>
+		</div>
+
+		<nav class="footer-nav" aria-label="Footer">
+			<a href="/about">About</a>
+			<a href="/offers">Offers</a>
+			<a href="/imprint">Imprint</a>
+			<a href="/privacy-policy">Privacy Policy</a>
+		</nav>
+	</div>
+</footer>
+
+<style>
+	.site-footer {
+		--footer-content-width: 67.5rem;
+
+		margin-top: auto;
+		position: relative;
+		width: 100%;
+		margin-inline: calc(50% - 50vw);
+		padding-inline: calc(50vw - 50%);
+		border-top: 1px solid var(--sl-color-hairline-shade);
+		background: var(--sl-color-bg);
+	}
+
+	.footer-inner {
+		width: min(100%, var(--footer-content-width));
+		margin: 0 auto;
+		padding: 2.5rem 1.5rem;
+		display: flex;
+		flex-direction: column;
+		gap: 1.75rem;
+	}
+
+	.footer-branding {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 1.1rem;
+	}
+
+	.footer-title,
+	.footer-meta {
+		margin: 0;
+	}
+
+	.footer-title {
+		font-size: clamp(1.35rem, 3.2vw, 1.85rem);
+		font-weight: 400;
+		line-height: 1.05;
+		color: var(--sl-color-text);
+	}
+
+	.footer-actions {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 0.9rem;
+	}
+
+	.newsletter-link {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem;
+		border: 1px solid color-mix(in srgb, var(--sl-color-text) 20%, transparent);
+		border-radius: 999px;
+		padding: 0.6rem 0.95rem;
+		color: var(--sl-color-text);
+		font-size: 0.95rem;
+		line-height: 1;
+		text-decoration: none;
+		white-space: nowrap;
+		opacity: 0.72;
+		transition:
+			border-color 160ms ease,
+			opacity 160ms ease,
+			transform 160ms ease;
+	}
+
+	.newsletter-link:hover {
+		border-color: color-mix(in srgb, var(--sl-color-text) 45%, transparent);
+		opacity: 1;
+		transform: translateY(-1px);
+	}
+
+	.newsletter-link svg {
+		width: 1rem;
+		height: 1rem;
+		fill: currentColor;
+	}
+
+	.social-links {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+	}
+
+	.social-links a {
+		display: inline-flex;
+		color: var(--sl-color-text);
+		transition:
+			opacity 160ms ease,
+			transform 160ms ease;
+	}
+
+	.social-links a:hover {
+		transform: translateY(-1px);
+	}
+
+	.social-links svg {
+		width: 1.25rem;
+		height: 1.25rem;
+		fill: currentColor;
+	}
+
+	.footer-meta,
+	.footer-nav a {
+		font-size: 0.9375rem;
+		color: var(--sl-color-text);
+		opacity: 0.78;
+	}
+
+	.footer-nav {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.75rem 1.5rem;
+	}
+
+	.footer-nav a {
+		text-decoration: none;
+	}
+
+	.footer-nav a:hover {
+		opacity: 1;
+		text-decoration: underline;
+	}
+
+	@media (min-width: 50rem) {
+		.site-footer {
+			z-index: calc(var(--sl-z-index-menu) + 1);
+		}
+
+		.footer-inner {
+			gap: 2.5rem;
+			padding-block: 3.25rem;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: flex-start;
+		}
+
+		.footer-branding {
+			gap: 1.45rem;
+		}
+
+		.footer-actions {
+			gap: 0.9rem;
+		}
+
+		.newsletter-link {
+			gap: 0.65rem;
+			padding: 0.72rem 1.35rem;
+			font-size: 1.05rem;
+		}
+
+		.newsletter-link svg {
+			width: 1.1rem;
+			height: 1.1rem;
+		}
+
+		.footer-nav {
+			justify-content: flex-end;
+		}
+	}
+</style>

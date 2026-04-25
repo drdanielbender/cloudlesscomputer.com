@@ -1,6 +1,7 @@
 ---
 import MobileMenuToggle from 'virtual:starlight/components/MobileMenuToggle';
 import Sidebar from 'virtual:starlight/components/Sidebar';
+import Footer from './Footer.astro';
 ---
 
 <div class="page sl-flex">
@@ -14,6 +15,7 @@ import Sidebar from 'virtual:starlight/components/Sidebar';
 		</div>
 	</nav>
 	<div class="main-frame"><slot /></div>
+	<Footer />
 </div>
 
 <style>
@@ -72,6 +74,7 @@ import Sidebar from 'virtual:starlight/components/Sidebar';
 		}
 
 		.main-frame {
+			flex: 1;
 			padding-top: calc(var(--sl-nav-height) + var(--sl-mobile-toc-height));
 			padding-inline-start: var(--sl-content-inline-start);
 		}
