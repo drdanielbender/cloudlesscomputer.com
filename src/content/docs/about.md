@@ -88,6 +88,6 @@ Have a question, collaboration idea, or just want to share something from your c
 
 I will do my best to reply to every message you send to me as a reply to my newsletter or as an 𝕏 or LinkedIn DM.
 
-- [Learn how to go cloudless from my newsletter named Aidful News](https://news.aidful.net) (soon to be rebooted and renamed to **cloudless computer**)
+- [Learn how to go cloudless from my newsletter named Aidful News](https://news.aidful.net/subscribe) (soon to be rebooted and renamed to **cloudless computer**)
 - [Connect with me on 𝕏](https://x.com/drdanielbender)
 - [Connect with me on LinkedIn](https://www.linkedin.com/in/drdanielbender/)

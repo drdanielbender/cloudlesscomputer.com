@@ -44,7 +44,8 @@ Main config in `astro.config.mjs`. Starlight handles:
 ## Development Notes
 
 - When unsure how to apply a change, look up the [Starlight documentation](https://starlight.astro.build/)
-- Always run `pnpm dev` to verify changes work
+- Run `pnpm build` to verify every non-minor change.
+- Minor changes do not require `pnpm build`: changing only wording of a content page, fixing typos in writing, or changing links.
 - Custom CSS: `src/styles/custom.css`
 
 ## Commit Conventions
